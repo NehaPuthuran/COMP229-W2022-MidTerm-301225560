@@ -41,7 +41,6 @@ router.post('/add', (req, res, next) => {
      *****************/
     let newBook = book({
       "Title": req.body.title,
-      "Description": req.body.description,
       "Price": req.body.price,
       "Author": req.body.author,
       "Genre": req.body.genre
@@ -92,7 +91,6 @@ router.post('/edit/:id', (req, res, next) => {
     let updatedBook = book({
       "_id": id,
       "Title": req.body.title,
-      "Description": req.body.description,
       "Price": req.body.price,
       "Author": req.body.author,
       "Genre": req.body.genre
